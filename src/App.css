@@ -1,0 +1,168 @@
+/*Stylisation commune*/
+.container {
+  text-align: center;
+  background-color: #b4b4b4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(24, 24, 24);
+}
+
+.image-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container h2{
+  text-align:center;
+}
+
+h2:hover{
+  text-decoration: overline;
+  cursor: pointer;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  cursor: pointer;
+}
+
+.image-container img:hover{
+  transform: scale(1.05);
+  transition: linear 0.2s;
+  opacity:0.5;
+ 
+}
+
+p{
+  text-align:start;
+  padding-left: 10px;
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+  /* Design pour PopUp Component onClick*/
+  .popup{
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.7);
+  }
+
+  .popup .enlarged-image img{
+    width: auto;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;   
+  }
+
+  .popup .enlarged-image .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 300px;
+  }
+
+
+/*Design spécifique pour Component Neura1 */
+.container46{
+  height: 400px;
+  width: 266px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.container56{
+  height: 400px;
+  width: 300px;
+  margin : 5px;
+  overflow: hidden;
+}
+
+
+/* Design specifique pour Component Meta*/
+.container-meta{
+  height: 690px;
+  width: 460px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+/*Design spécifique pour Component Canvas */
+.container-canvas{
+  height: 460px;
+  width: 690px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+/*Design spécifique pour Component Triptych */
+.container-med{
+  height: 300px;
+  width: 400px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.container-triptych{
+ display:flex;
+ justify-content:center;
+}
+
+.container-triptych #top{
+  height: 240px;
+  width: 320px;
+  padding-bottom: 5px;
+ 
+}
+.container-triptych #middle{
+  height: 240px;
+  width: 320px;
+  padding-bottom: 5px;
+ 
+}
+.container-triptych #bottom{
+  height: 240px;
+  width: 320px;
+}
+
+
+.container-triptych img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/*Design spécifique pour Component Eyes */
+.container-eyes{
+  height:300px;
+  width : 900px;
+}
+
+.slider{
+  height:300px;
+  width : 900px;
+}
+
+.container-eyes img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+  #pause-btn{
+    position: static;
+    top : 100px;
+}
